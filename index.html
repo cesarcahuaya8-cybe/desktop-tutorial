@@ -1,12 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" HiperTroyano="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiperTroyano | Servicio Técnico Avanzado</title>
+    <link rel="stylesheet" href="stylas.css">
 </head>
 <body>
-    
+
+    <!-- NUEVO FONDO: LLUVIA DIGITAL NEÓN 3D -->
+    <div class="rain-bg">
+        <div class="drop-layer layer-front"></div>
+        <div class="drop-layer layer-mid"></div>
+        <div class="drop-layer layer-back"></div>
+    </div>
+
+    <!-- AUDIO COMPATIBLE -->
+    <audio id="click-sound" src="https://assets.mixkit.co/active_storage/sfx/2568/2568-84.wav" preload="auto"></audio>
+
+    <header>
+        <div class="header-content">
+            <h1 class="logo" data-text="HiperTroyano">HiperTroyano</h1>
+            <p class="subtitle">Soporte Tecnológico de Alto Rendimiento</p>
+            <div class="badge-online">🟢 Centro de Soporte Activo</div>
+        </div>
+    </header>
+
+    <main class="services-container">
+        <h2>Servicios Especializados en Computación</h2>
+        <p class="tap-hint">⚡ Haz clic en una tarjeta para ver el desglose técnico completo ⚡</p>
+
+        <div class="cards-grid">
+
+            <!-- SERVICIO 1: LAPTOPS -->
+            <div class="card">
+                <input type="checkbox" id="card1" class="card-toggle" onclick="document.getElementById('click-sound').play()">
+                <label for="card1" class="card-inner">
+                    <div class="front">
+                        <span class="card-badge">Popular</span>
+                        <img src="https://images.unsplash.com/photo-1591405351990-4726e331f141?auto=format&fit=crop&w=500&q=80" alt="Mantenimiento de Laptops">
+                        <h3>Mantenimiento de Laptops</h3>
+                    </div>
+                    <div class="back">
+                        <h3>Mantenimiento de Laptops</h3>
+                        <p class="detallado">Desarmado milimétrico por marcas (Asus, HP, Dell, Lenovo, Apple). Realizamos una remoción profunda de sedimentos de polvo en ventiladores y disipadores de calor. Reemplazamos la pasta térmica seca por compuestos premium de alta conductividad (como Arctic MX-4 o Thermal Grizzly) y añadimos thermal pads nuevos para enfriar los chips de video integrados. ¡Adiós sobrecalentamiento y apagones!</p>
+                        <span class="action-btn">Cotizar por WhatsApp</span>
+                    </div>
+                </label>
+            </div>
+
+            <!-- SERVICIO 2: PC DESKTOP -->
+            <div class="card">
+                <input type="checkbox" id="card2" class="card-toggle" onclick="document.getElementById('click-sound').play()">
+                <label for="card2" class="card-inner">
+                    <div class="front">
+                        <img src="https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&w=500&q=80" alt="Limpieza de Computadoras">
+                        <h3>Limpieza de PC Desktop</h3>
+                    </div>
+                    <div class="back">
+                        <h3>Limpieza de PC Desktop</h3>
+                        <p class="detallado">Mantenimiento riguroso de computadoras de escritorio de oficina y torres personalizadas. Soplado y brochado estático de la fuente de poder, zócalos RAM y disipador del procesador. Cambiamos pasta térmica, aplicamos limpia-contactos dieléctrico en los puertos y ranuras PCIe para evitar falsos contactos, y realizamos una reorganización completa de cables (Cable Management) para asegurar el flujo de aire interno óptimo del chasis.</p>
+                        <span class="action-btn">Cotizar por WhatsApp</span>
+                    </div>
+                </label>
+            </div>
+
+            <!-- SERVICIO 3: HARDWARE -->
+            <div class="card">
+                <input type="checkbox" id="card3" class="card-toggle" onclick="document.getElementById('click-sound').play()">
+                <label for="card3" class="card-inner">
+                    <div class="front">
+                        <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=500&q=80" alt="Reparación de Hardware">
+                        <h3>Reparación de Hardware</h3>
+                    </div>
+                    <div class="back">
+                        <h3>Reparación de Hardware</h3>
+                        <p class="detallado">Diagnóstico electrónico avanzado en componentes. Nos encargamos de la microsoldadura en placas madre cortocircuitadas, reparación de etapas de potencia de encendido, reanimación de puertos quemados (USB, HDMI, Jack de carga), cambio de pantallas rotas LED/OLED sin parpadeos, sustitución de teclados incrustados y reconstrucción artesanal de bisagras rotas en carcasas plásticas.</p>
+                        <span class="action-btn">Cotizar por WhatsApp</span>
+                    </div>
+                </label>
+            </div>
+
+            <!-- SERVICIO 4: SOFTWARE -->
+            <div class="card">
+                <input type="checkbox" id="card4" class="card-toggle" onclick="document.getElementById('click-sound').play()">
+                <label for="card4" class="card-inner">
+                    <div class="front">
+                        <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=500&q=80" alt="Instalaciones">
+                        <h3>Sistemas e Instalaciones</h3>
+                    </div>
+                    <div class="back">
+                        <h3>Sistemas e Instalaciones</h3>
+                        <p class="detallado">Formateo completo con respaldos de seguridad íntegros (fotos, documentos, bases de datos). Instalamos Windows 10 y Windows 11 en sus versiones Pro de 64 bits con configuraciones de telemetría desactivadas para máxima velocidad. Incluye activación de paquetería Office permanente, instalación de utilitarios (PDF, RAR, navegadores acelerados) y suites profesionales como Adobe o AutoCAD estables.</p>
+                        <span class="action-btn">Cotizar por WhatsApp</span>
+                    </div>
+                </label>
+            </div>
+
+            <!-- SERVICIO 5: GAMER -->
+            <div class="card">
+                <input type="checkbox" id="card5" class="card-toggle" onclick="document.getElementById('click-sound').play()">
+                <label for="card5" class="card-inner">
+                    <div class="front">
+                        <span class="card-badge premium">Gamer</span>
+                        <img src="https://images.unsplash.com/photo-1600861195091-690c92f1d2cc?auto=format&fit=crop&w=500&q=80" alt="Optimización Gamer">
+                        <h3>Optimización Gamer</h3>
+                    </div>
+                    <div class="back">
+                        <h3>Optimización Gamer</h3>
+                        <p class="detallado">Exprimimos cada componente de tu setup de juegos o streaming. Realizamos un remapeo de procesos en segundo plano, eliminación del retraso de entrada de datos (Input Lag), optimización de energía en la BIOS, configuración personalizada de los controladores de video (NVIDIA / AMD) y perfiles estables XMP para memorias RAM. Logra tasas altas de FPS y estabilidad total en tus partidas.</p>
+                        <span class="action-btn">Cotizar por WhatsApp</span>
+                    </div>
+                </label>
+            </div>
+
+            <!-- SERVICIO 6: CIBERSEGURIDAD -->
+            <div class="card">
+                <input type="checkbox" id="card6" class="card-toggle" onclick="document.getElementById('click-sound').play()">
+                <label for="card6" class="card-inner">
+                    <div class="front">
+                        <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc?auto=format&fit=crop&w=500&q=80" alt="Eliminación de Virus">
+                        <h3>Ciberseguridad y Virus</h3>
+                    </div>
+                    <div class="back">
+                        <h3>Ciberseguridad y Virus</h3>
+                        <p class="detallado">Análisis heurístico profundo para desinfectar computadoras comprometidas. Rastreamos y eliminamos virus residentes, malware publicitario molesto (Adware), Troyanos espías y Ransomware silencioso. Blindamos el sistema operativo configurando cortafuegos (Firewalls) robustos, limpiamos las extensiones maliciosas de tus navegadores y blindamos tus cuentas contra robo de contraseñas bancarias.</p>
+                        <span class="action-btn">Cotizar por WhatsApp</span>
+                    </div>
+                </label>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="frase">"Donde otros ven fallas, nosotros vemos soluciones."</p>
+            <p class="copyright">© 2026 HiperTroyano - Ingeniería en Soporte de Computadoras</p>
+        </div>
+    </footer>
+
+    <!-- BOTÓN DE WHATSAPP -->
+    <a href="https://wa.me/59176527078" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 32 32" class="whatsapp-icon">
+            <path d="M16 2a13 13 0 0 0-11.3 19.4L3 29l7.8-2A13 13 0 1 0 16 2zm6.8 18.2c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.2-4.3-.9-3.6-1.5-6-5.2-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6 0-1.7.9-2.5 1.2-2.9.3-.3.7-.5 1.1-.5.1 0 .3 0 .4.1.1 0 .3-.1.5.4.2.5.8 1.9.9 2.1.1.1.1.3 0 .5-.1.2-.2.3-.4.5-.1.2-.3.4-.5.5-.2.2-.4.4-.2.7.2.4.9 1.5 2 2.5 1.4 1.2 2.5 1.6 2.9 1.8.3.1.5.1.7-.1.2-.3.9-1 1.1-1.4.2-.3.4-.3.7-.2.3.1 1.9.9 2.2 1.1.3.1.5.2.6.3.1.2.1 1-.2 1.8z"/>
+        </svg>
+    </a>
+
 </body>
 </html>
